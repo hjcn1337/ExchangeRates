@@ -10,17 +10,25 @@
 		1B7388E4C2DC98081758359F /* Pods_ExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE566E9DD5C0EBCF4C4F83BD /* Pods_ExchangeRates.framework */; };
 		5209F7CC22D9CF1800A6D5DD /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209F7CB22D9CF1800A6D5DD /* BaseApi.swift */; };
 		5209F7CE22D9CFAE00A6D5DD /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209F7CD22D9CFAE00A6D5DD /* ResponseModel.swift */; };
-		5209F7D022DA1BB200A6D5DD /* ValuteScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5209F7CF22DA1BB200A6D5DD /* ValuteScene.storyboard */; };
-		5209F7D222DA1F9800A6D5DD /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209F7D122DA1F9800A6D5DD /* ExchangeViewController.swift */; };
+		5209F7D022DA1BB200A6D5DD /* ValutesScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5209F7CF22DA1BB200A6D5DD /* ValutesScene.storyboard */; };
+		5209F7D222DA1F9800A6D5DD /* ExchangeSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209F7D122DA1F9800A6D5DD /* ExchangeSceneViewController.swift */; };
 		5209F7D622DA1FD000A6D5DD /* ExchangeScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5209F7D522DA1FD000A6D5DD /* ExchangeScene.storyboard */; };
+		5240BA0A256A958F00C913A1 /* ValutesSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA09256A958F00C913A1 /* ValutesSceneInteractor.swift */; };
+		5240BA0D256A959E00C913A1 /* ValutesSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA0C256A959E00C913A1 /* ValutesSceneWorker.swift */; };
+		5240BA10256A95AA00C913A1 /* ValutesScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA0F256A95AA00C913A1 /* ValutesScenePresenter.swift */; };
+		5240BA13256A95BE00C913A1 /* ValutesSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA12256A95BE00C913A1 /* ValutesSceneRouter.swift */; };
+		5240BA16256A966E00C913A1 /* ExchangeSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA15256A966E00C913A1 /* ExchangeSceneInteractor.swift */; };
+		5240BA19256A968100C913A1 /* ExchangeScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA18256A968100C913A1 /* ExchangeScenePresenter.swift */; };
+		5240BA1C256A968F00C913A1 /* ExchangeSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA1B256A968F00C913A1 /* ExchangeSceneWorker.swift */; };
+		5240BA1F256A969D00C913A1 /* ExchangeSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA1E256A969D00C913A1 /* ExchangeSceneRouter.swift */; };
+		5240BA24256A970300C913A1 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240BA23256A970300C913A1 /* DoubleExtensions.swift */; };
 		52C5090622CB698700693544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5090522CB698700693544 /* AppDelegate.swift */; };
 		52C5090B22CB698700693544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C5090922CB698700693544 /* Main.storyboard */; };
 		52C5090D22CB698700693544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C5090C22CB698700693544 /* Assets.xcassets */; };
 		52C5091022CB698700693544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C5090E22CB698700693544 /* LaunchScreen.storyboard */; };
-		52CF8AF522CCD3BD00EB3A33 /* ValuteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF8AF422CCD3BD00EB3A33 /* ValuteApi.swift */; };
 		52CF8AF922CCFD1200EB3A33 /* ValuteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF8AF822CCFD1200EB3A33 /* ValuteData.swift */; };
 		52E311FD22D0B5E7004B906C /* Valute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E311FC22D0B5E7004B906C /* Valute.swift */; };
-		52E311FF22D0BD80004B906C /* ValuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E311FE22D0BD80004B906C /* ValuteViewController.swift */; };
+		52E311FF22D0BD80004B906C /* ValutesSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E311FE22D0BD80004B906C /* ValutesSceneViewController.swift */; };
 		52E3120122D0BFAA004B906C /* ValuteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3120022D0BFAA004B906C /* ValuteCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,19 +36,27 @@
 		3EF3502E3FEF4F6A56E86A1A /* Pods-ExchangeRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.release.xcconfig"; sourceTree = "<group>"; };
 		5209F7CB22D9CF1800A6D5DD /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		5209F7CD22D9CFAE00A6D5DD /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
-		5209F7CF22DA1BB200A6D5DD /* ValuteScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValuteScene.storyboard; sourceTree = "<group>"; };
-		5209F7D122DA1F9800A6D5DD /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		5209F7CF22DA1BB200A6D5DD /* ValutesScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValutesScene.storyboard; sourceTree = "<group>"; };
+		5209F7D122DA1F9800A6D5DD /* ExchangeSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSceneViewController.swift; sourceTree = "<group>"; };
 		5209F7D522DA1FD000A6D5DD /* ExchangeScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExchangeScene.storyboard; sourceTree = "<group>"; };
+		5240BA09256A958F00C913A1 /* ValutesSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValutesSceneInteractor.swift; sourceTree = "<group>"; };
+		5240BA0C256A959E00C913A1 /* ValutesSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValutesSceneWorker.swift; sourceTree = "<group>"; };
+		5240BA0F256A95AA00C913A1 /* ValutesScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValutesScenePresenter.swift; sourceTree = "<group>"; };
+		5240BA12256A95BE00C913A1 /* ValutesSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValutesSceneRouter.swift; sourceTree = "<group>"; };
+		5240BA15256A966E00C913A1 /* ExchangeSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSceneInteractor.swift; sourceTree = "<group>"; };
+		5240BA18256A968100C913A1 /* ExchangeScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeScenePresenter.swift; sourceTree = "<group>"; };
+		5240BA1B256A968F00C913A1 /* ExchangeSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSceneWorker.swift; sourceTree = "<group>"; };
+		5240BA1E256A969D00C913A1 /* ExchangeSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSceneRouter.swift; sourceTree = "<group>"; };
+		5240BA23256A970300C913A1 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		52C5090222CB698700693544 /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C5090522CB698700693544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C5090A22CB698700693544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52C5090C22CB698700693544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C5090F22CB698700693544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C5091122CB698700693544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52CF8AF422CCD3BD00EB3A33 /* ValuteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteApi.swift; sourceTree = "<group>"; };
 		52CF8AF822CCFD1200EB3A33 /* ValuteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteData.swift; sourceTree = "<group>"; };
 		52E311FC22D0B5E7004B906C /* Valute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valute.swift; sourceTree = "<group>"; };
-		52E311FE22D0BD80004B906C /* ValuteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteViewController.swift; sourceTree = "<group>"; };
+		52E311FE22D0BD80004B906C /* ValutesSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValutesSceneViewController.swift; sourceTree = "<group>"; };
 		52E3120022D0BFAA004B906C /* ValuteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteCell.swift; sourceTree = "<group>"; };
 		6DD31FBD237CCD43AAE50987 /* Pods-myapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-myapp/Pods-myapp.release.xcconfig"; sourceTree = "<group>"; };
 		A73E447F70D88E112D41090E /* Pods-ExchangeRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +96,6 @@
 		5209F7CA22D9CD6400A6D5DD /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				52CF8AF422CCD3BD00EB3A33 /* ValuteApi.swift */,
 				5209F7CB22D9CF1800A6D5DD /* BaseApi.swift */,
 				5209F7CD22D9CFAE00A6D5DD /* ResponseModel.swift */,
 				52CF8AF822CCFD1200EB3A33 /* ValuteData.swift */,
@@ -92,8 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				52E3120022D0BFAA004B906C /* ValuteCell.swift */,
-				52E311FE22D0BD80004B906C /* ValuteViewController.swift */,
-				5209F7CF22DA1BB200A6D5DD /* ValuteScene.storyboard */,
+				52E311FE22D0BD80004B906C /* ValutesSceneViewController.swift */,
+				5240BA09256A958F00C913A1 /* ValutesSceneInteractor.swift */,
+				5240BA0C256A959E00C913A1 /* ValutesSceneWorker.swift */,
+				5240BA0F256A95AA00C913A1 /* ValutesScenePresenter.swift */,
+				5240BA12256A95BE00C913A1 /* ValutesSceneRouter.swift */,
+				5209F7CF22DA1BB200A6D5DD /* ValutesScene.storyboard */,
 			);
 			path = Valutes;
 			sourceTree = "<group>";
@@ -101,10 +120,22 @@
 		5209F7D422DA1FB500A6D5DD /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
-				5209F7D122DA1F9800A6D5DD /* ExchangeViewController.swift */,
+				5209F7D122DA1F9800A6D5DD /* ExchangeSceneViewController.swift */,
 				5209F7D522DA1FD000A6D5DD /* ExchangeScene.storyboard */,
+				5240BA15256A966E00C913A1 /* ExchangeSceneInteractor.swift */,
+				5240BA18256A968100C913A1 /* ExchangeScenePresenter.swift */,
+				5240BA1B256A968F00C913A1 /* ExchangeSceneWorker.swift */,
+				5240BA1E256A969D00C913A1 /* ExchangeSceneRouter.swift */,
 			);
 			path = Exchange;
+			sourceTree = "<group>";
+		};
+		5240BA22256A96F200C913A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5240BA23256A970300C913A1 /* DoubleExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		52C508F922CB698600693544 = {
@@ -128,6 +159,7 @@
 		52C5090422CB698700693544 /* ExchangeRates */ = {
 			isa = PBXGroup;
 			children = (
+				5240BA22256A96F200C913A1 /* Extensions */,
 				5209F7C822D9CCF800A6D5DD /* Models */,
 				5209F7CA22D9CD6400A6D5DD /* Network */,
 				5209F7C922D9CD3300A6D5DD /* Views */,
@@ -219,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5209F7D022DA1BB200A6D5DD /* ValuteScene.storyboard in Resources */,
+				5209F7D022DA1BB200A6D5DD /* ValutesScene.storyboard in Resources */,
 				52C5091022CB698700693544 /* LaunchScreen.storyboard in Resources */,
 				52C5090D22CB698700693544 /* Assets.xcassets in Resources */,
 				5209F7D622DA1FD000A6D5DD /* ExchangeScene.storyboard in Resources */,
@@ -274,13 +306,21 @@
 			files = (
 				5209F7CC22D9CF1800A6D5DD /* BaseApi.swift in Sources */,
 				52E3120122D0BFAA004B906C /* ValuteCell.swift in Sources */,
-				52E311FF22D0BD80004B906C /* ValuteViewController.swift in Sources */,
-				52CF8AF522CCD3BD00EB3A33 /* ValuteApi.swift in Sources */,
-				5209F7D222DA1F9800A6D5DD /* ExchangeViewController.swift in Sources */,
+				52E311FF22D0BD80004B906C /* ValutesSceneViewController.swift in Sources */,
+				5240BA0D256A959E00C913A1 /* ValutesSceneWorker.swift in Sources */,
+				5240BA13256A95BE00C913A1 /* ValutesSceneRouter.swift in Sources */,
+				5240BA1F256A969D00C913A1 /* ExchangeSceneRouter.swift in Sources */,
+				5209F7D222DA1F9800A6D5DD /* ExchangeSceneViewController.swift in Sources */,
 				52CF8AF922CCFD1200EB3A33 /* ValuteData.swift in Sources */,
+				5240BA0A256A958F00C913A1 /* ValutesSceneInteractor.swift in Sources */,
+				5240BA10256A95AA00C913A1 /* ValutesScenePresenter.swift in Sources */,
 				52C5090622CB698700693544 /* AppDelegate.swift in Sources */,
 				5209F7CE22D9CFAE00A6D5DD /* ResponseModel.swift in Sources */,
+				5240BA24256A970300C913A1 /* DoubleExtensions.swift in Sources */,
+				5240BA16256A966E00C913A1 /* ExchangeSceneInteractor.swift in Sources */,
+				5240BA19256A968100C913A1 /* ExchangeScenePresenter.swift in Sources */,
 				52E311FD22D0B5E7004B906C /* Valute.swift in Sources */,
+				5240BA1C256A968F00C913A1 /* ExchangeSceneWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

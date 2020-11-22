@@ -1,20 +1,17 @@
 //
-//  ValuteApi.swift
+//  ValutesSceneWorker.swift
 //  ExchangeRates
 //
-//  Created by Ростислав Ермаченков on 03/07/2019.
-//  Copyright © 2019 Ростислав Ермаченков. All rights reserved.
+//  Created by Ростислав Ермаченков on 22.11.2020.
+//  Copyright © 2020 Ростислав Ермаченков. All rights reserved.
 //
 
 import Foundation
-import Alamofire
 
-class ValuteApi : BaseApi {
-    
+class ValutesSceneWorker : BaseApi {
     var valutes = [Valute]()
     
-    func getExchangeRates(completion: @escaping () -> Void) {
-        valutes = []
+    func getValutes(completion: @escaping ([Valute]) -> ()) {
         
         let url = URL(string: "https://www.cbr-xml-daily.ru/daily_json.js")
         let request = URLRequest(url: url!)
@@ -90,14 +87,10 @@ class ValuteApi : BaseApi {
                 
                 self.valutes.append(Valute(name: (exchangeRates.Valute.JPY.Name), value: (exchangeRates.Valute.JPY.Value)))
                 
+                completion(self.valutes)
             }
-            completion()
-
         })
         
         
-        
     }
-    
 }
-

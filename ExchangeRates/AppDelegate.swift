@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        window?.rootViewController = UIStoryboard(name: "ValuteScene", bundle: nil).instantiateInitialViewController()
+        window?.rootViewController = UIStoryboard(name: "ValutesScene", bundle: nil).instantiateInitialViewController()
         
         return true
     }
