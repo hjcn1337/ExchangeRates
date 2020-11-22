@@ -15,7 +15,7 @@ protocol ValutesSceneDisplayLogic: class {
 class ValutesSceneViewController: UIViewController, UITableViewDataSource, ValutesSceneDisplayLogic {
     
     var interactor: ValutesSceneBusinessLogic?
-    var router: (NSObjectProtocol & ValutesSceneRoutingLogic & ValutesSceneDataPassing)?
+    var router: (ValutesSceneRoutingLogic & ValutesSceneDataPassing)?
     
     private let refreshControl = UIRefreshControl()
     var valutes = [Valute]()

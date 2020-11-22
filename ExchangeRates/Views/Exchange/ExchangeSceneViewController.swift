@@ -15,7 +15,7 @@ protocol ExchangeSceneDisplayLogic: class {
 class ExchangeSceneViewController: UIViewController, ExchangeSceneDisplayLogic {
     
     var interactor: ExchangeSceneBusinessLogic?
-    var router: (NSObjectProtocol & ExchangeSceneRoutingLogic & ExchangeSceneDataPassing)?
+    var router: (ExchangeSceneRoutingLogic & ExchangeSceneDataPassing)?
     
     let conversions = ["USD -> RUB", "RUB -> USD"]
     var valutes: [Valute]?
