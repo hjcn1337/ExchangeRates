@@ -1,6 +1,6 @@
 //
 //  ValuteTableViewCell.swift
-//  myapp
+//  ExchangeRates
 //
 //  Created by Ростислав Ермаченков on 06/07/2019.
 //  Copyright © 2019 Ростислав Ермаченков. All rights reserved.
